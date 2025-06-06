@@ -1,0 +1,225 @@
+{% extends 'Rebase.html' %}
+
+{% block title %}首页{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="well" style="padding:7px;padding-left:20px">
+                <h1>{{ month }} {{ day }}, {{ year }}</h1>
+                <h3>Welcome to the site <strong>{{ userInfo.username }}</strong></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="tile-stats tile-green">
+                <div class="icon"><i class="entypo-chart-bar"></i></div>
+                <div class="num" style="font-size: 24px" data-start="0" data-end="{{ jobsLen }}" data-postfix=""
+                     data-duration="1500"
+                     data-delay="600">{{ jobsLen }}
+                </div>
+                <h3>数据总量统计</h3>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="tile-stats tile-aqua">
+                <div class="icon"><i class="entypo-mail"></i></div>
+                <div class="num" style="font-size: 24px">{{ educationsTop }}
+                </div>
+                <h3>行业最高学历</h3>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="tile-stats tile-orange">
+                <div class="icon"><i class="entypo-infinity"></i></div>
+                <div class="num" style="font-size: 24px" data-start="0" data-end="{{ salaryTop }}" data-postfix=""
+                     data-duration="1500"
+                     data-delay="1800">{{ salaryTop }}
+                </div>
+                <h3>行业最高薪资</h3>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="tile-stats tile-cyan">
+                <div class="icon"><i class="entypo-network"></i></div>
+                <div class="num" style="font-size: 24px">{{ addressTop }}
+                </div>
+                <h3>优势地点</h3>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="tile-stats tile-brown">
+                <div class="icon"><i class="entypo-briefcase"></i></div>
+                <div class="num" style="font-size: 24px" data-start="0" data-end="{{ salaryMonthTop }}"
+                     data-postfix=""
+                     data-duration="1500" data-delay="1800">{{ salaryMonthTop }}
+                </div>
+                <h3>最高年底多薪</h3>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="tile-stats tile-purple">
+                <div class="icon"><i class="entypo-briefcase"></i></div>
+                <div class="num" style="font-size: 24px">
+                    {% if praticeMax %}
+                        实习岗位
+                    {% else %}
+                        正常岗位
+                    {% endif %}
+                </div>
+                <h3>岗位性质</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+    <div class="col-sm-12">
+        <div class="panel panel-default" data-collapsed="0">
+            <div class="panel-heading">
+                <div class="panel-title">数据表格</div>
+                <div class="panel-options">
+                    <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+                    <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+                </div>
+            </div>
+            <div class="panel-body">
+                <table class="table table-bordered dataTable" id="table-1">
+                    <thead>
+                    <tr>
+                        <th>编号</th>
+                        <th>公司名称</th>
+                        <th>情况</th>
+                        <th>福利</th>
+                        <th>职位</th>
+                        <th>薪资</th>
+                        <th>要求</th>
+                        <th>地点</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for job in tableData %}
+                        <tr class="gradeU">
+                            <td>
+                                {{ job.id }}
+                                <img src="{{ job.companyAvatar }}" alt="">
+                            </td>
+                            <td class="center">
+                                {{ job.companyTitle }}
+                            </td>
+                            <td class="center">
+                                <div>{{ job.companyStatus }}</div>
+                                <div>{{ job.companyPeople }}</div>
+                            </td>
+                            {#        有情况            数据库存储的问题      过滤器|join:", "  #}
+                            <td class="center">
+                                {{ job.companyTags }}
+                            </td>
+
+                            <td>
+                                <a target="__blank"
+                                   href="https://www.zhipin.com/web/geek/job?query={{ job.title }}&city=100010000">
+                                    {{ job.title }}</a>
+                                <div style="margin-top: 10px;">
+                                    {% if job.pratice != 0 %}
+                                        实习岗位
+                                    {% else %}
+                                        普通岗位
+                                    {% endif %}
+                                </div>
+                            </td>
+                            <td class="center">
+                                <div>
+                                    {% if job.pratice %}
+                                        {{ job.salary }}/天
+                                    {% else %}
+                                        {{ job.salary }}/月
+                                    {% endif %}
+                                </div>
+                                <div>
+                                    {% if job.salaryMonth != '0' %}
+                                        {{ job.salaryMonth }}薪
+                                    {% else %}
+                                        无
+                                    {% endif %}
+                                </div>
+                            </td>
+                            <td class="center">
+                                <div>{{ job.educational }}</div>
+                                <div>{{ job.workExperience }}</div>
+                                <div>{{ job.workTag }}</div>
+                            </td>
+                            <td class="center">{{ job.address }}</td>
+                            <td class="center text-center">
+                                <a target="_blank" href="{{ job.detailUrl }}" class="btn btn-info"
+                                   style="margin-bottom: 5px">岗位详情</a>
+                                <a target="__blank" href="{{ job.companyUrl }}" style="margin-bottom: 5px"
+                                   class="btn btn-success">公司详情</a>
+                                <a type="button" href="/boss/addHistory/{{ job.id }}"
+                                   class="btn btn-danger">添加历史</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <ul class="pagination pagination-centered">
+                            {% if tableData.has_previous %}
+                                <li><a href="?page=1">&laquo; 首页</a></li>
+                                <li><a href="?page={{ tableData.previous_page_number }}">上一页</a></li>
+                            {% endif %}
+
+                            <li class="active"><a href="#">{{ tableData.number }}
+                                / {{ tableData.paginator.num_pages }}</a></li>
+
+                            {% if tableData.has_next %}
+                                <li><a href="?page={{ tableData.next_page_number }}">下一页</a></li>
+                                <li><a href="?page={{ tableData.paginator.num_pages }}">末页 &raquo;</a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        var responsiveHelper;
+        var breakpointDefinition = {
+            tablet: 1024,
+            phone: 480
+        };
+        var tableContainer;
+        jQuery(document).ready(function ($) {
+            tableContainer = $("#table-1");
+            tableContainer.dataTable({
+                "sPaginationType": "bootstrap",
+                "aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+                "bStateSave": true,
+                // Responsive Settings
+                bAutoWidth: false,
+                fnPreDrawCallback: function () {
+                    // Initialize the responsive datatables helper once.
+                    if (!responsiveHelper) {
+                        responsiveHelper = new ResponsiveDatatablesHelper(tableContainer, breakpointDefinition);
+                    }
+                },
+                fnRowCallback: function (nRow, aData, iDisplayIndex, iDisplayIndexFull) {
+                    responsiveHelper.createExpandIcon(nRow);
+                },
+                fnDrawCallback: function (oSettings) {
+                    responsiveHelper.respond();
+                }
+            });
+
+            $(".dataTables_wrapper select").select2({
+                minimumResultsForSearch: -1
+            });
+        });
+    </script>
+{% endblock %}

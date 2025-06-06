@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neon Admin Panel">
+    <meta name="author" content="">
+
+    <title>{% block title %}My Site{% endblock %}</title>
+
+    {#    <link rel="stylesheet" href="{% static 'css/jquery-ui-1.10.3.custom.min.css' %}">#}
+    {#    <link rel="stylesheet" href="{% static 'css/entypo.css' %} }">#}
+    {#    <link rel="stylesheet" href="{% static 'css/css.css' %}">#}
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/neon-core.css">
+    <link rel="stylesheet" href="/static/css/neon-theme.css">
+    <link rel="stylesheet" href="/static/css/neon-forms.css">
+    <link rel="stylesheet" href="/static/css/custom.css">
+    <script src="/static/js/jquery-1.11.0.min.js"></script>
+    <style>
+        .errorlist {
+            list-style-type: none; /* 去掉圆点 */
+            padding-left: 0;
+            color: red; /* 错误文字颜色为红色 */
+        }
+
+        .errorlist li {
+            margin-bottom: 5px;
+        }
+    </style>
+
+</head>
+
+{% block content %}
+{% endblock %}
+
+
+{% block js %}
+{% endblock %}
+<script src="/static/js/main-gsap.js"></script>
+<script src="/static/js/jquery-ui-1.10.3.minimal.min.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+<script src="/static/js/joinable.js"></script>
+<script src="/static/js/resizeable.js"></script>
+<script src="/static/js/neon-api.js"></script>
+<script src="/static/js/jquery.validate.min.js"></script>
+<script src="/static/js/neon-login.js"></script>
+<script src="/static/js/neon-custom.js"></script>
+<script src="/static/js/neon-demo.js"></script>
+
+</body>
+</html>

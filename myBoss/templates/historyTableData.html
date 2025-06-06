@@ -1,0 +1,95 @@
+{% extends "Rebase.html" %}
+{% block title %}
+    历史查询
+{% endblock %}
+
+{% block content %}
+    <hr>
+    <ol class="breadcrumb bc-3">
+        <li>
+            <a href="#"><i class="entypo-home"></i>数据统计</a>
+        </li>
+        <li class="active">
+            <strong>历史查询</strong>
+        </li>
+    </ol>
+    <h2>历史查询</h2>
+    <br>
+    <div class="row">
+        {% for i in historyData %}
+            <div class="member-entry">
+                <a href="{{ i.job.companyUrl }}" class="member-img">
+                    <img src="{{ i.job.companyAvatar }}" class="img-rounded">
+                    <i class="entypo-forward"></i>
+                </a>
+
+                <div class="member-details">
+                    <h4>
+                        <a href="{{ i.companyUrl }}" style="font-weight: bold">{{ i.job.companyTitle }}</a>
+                    </h4>
+                    <div class="row info-list">
+                        <div class="col-sm-4">
+                            <i class="entypo-briefcase"></i>
+                            <a class="text-info" href="{{ i.job.detailUrl }}">{{ i.job.title }}</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <i class="entypo-star"></i>
+                            <a class="text-danger" href="#">
+                                {% if i.job.pratice == 0 %}
+                                    {{ i.job.salary }}K/月
+                                    {% if i.job.salaryMonth != '0' %}
+                                        ·{{ i.job.salaryMonth }}薪
+                                    {% endif %}
+                                {% else %}
+                                    {{ i.job.salary }}元/天
+                                {% endif %}
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <i class="entypo-facebook"></i>
+                            <a href="#">
+                                {{ i.job.workExperience }}|{{ i.job.educational }}|{{ i.job.type }}
+                            </a>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col-sm-4">
+                            <i class="entypo-location"></i>
+                            <a href="#">{{ i.job.address }}</a>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <i class="entypo-mail"></i>
+                            <a href="#">{{ i.job.hrWork }}->{{ i.job.hrName }}</a>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <i class="entypo-linkedin"></i>
+                            <a href="#">{{ i.job.companyStatus }}|{{ i.job.companyPeople }}人</a>
+                        </div>
+
+                        <div class="col-sm-6">
+                            {% for i in i.job.workTag %}
+                                {% if i != '' %}
+                                    <code>{{ i }}</code>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        <div class="col-sm-6">
+                            {% if i.job.companyTags != '无' %}
+                                {% for i in i.job.companyTags %}
+                                    {% if i != '' %}
+                                        <code style="margin-bottom: 3px;display:inline-block">{{ i }}</code>
+                                    {% endif %}
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        <div class="col-md-2">
+                            <a href="/boss/removeHistory/{{ i.id }}" type="button" class="btn btn-danger">删除</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,139 @@
+{% extends 'Rebase.html' %}
+
+{% block title %}
+    修改个人信息
+{% endblock %}
+
+{% block content %}
+    <ol class="breadcrumb bc-3">
+        <li>
+            <a href="#"><i class="entypo-home"></i>个人中心</a>
+        </li>
+        <li class="active">
+            <strong>个人信息</strong>
+        </li>
+    </ol>
+    <h2>个人信息修改</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-primary" data-collapsed="0">
+                <div class="panel-heading">
+                    <div class="panel-options">
+                        <a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i
+                                class="entypo-cog"></i></a>
+                        <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+                        <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+                    </div>
+                </div>
+
+                <div class="panel-body">
+                    <form role="form" method="POST" enctype="multipart/form-data" action=""
+                          class="form-horizontal form-groups-bordered" novalidate>
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="field-1" class="col-sm-3 control-label">用户名</label>
+                            <div class="col-sm-5">
+{#                                <input type="text" class="form-control" name="username" readonly#}
+{#                                       value="{{ userInfo.username }}" id="field-1"#}
+{#                                       placeholder="请输入用户名">#}
+                                {{ form.username }}
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="field-2" class="col-sm-3 control-label">学历</label>
+                            <div class="col-sm-5">
+{#                                <select name="educational" class="form-control">#}
+{#                                    {% for e in pageData.educations %}#}
+{#                                        {% if e == userInfo.educational %}#}
+{#                                            <option selected value="{{ e }}">{{ e }}</option>#}
+{#                                        {% else %}#}
+{#                                            <option value="{{ e }}">{{ e }}</option>#}
+{#                                        {% endif %}#}
+{#                                    {% endfor %}#}
+{#                                </select>#}
+                                {{ form.educational }}
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="field-3" class="col-sm-3 control-label">工作经验</label>
+                            <div class="col-sm-5">
+{#                                <select name="workExperience" class="form-control">#}
+{#                                    {% for w in pageData.workExperience %}#}
+{#                                        {% if w == userInfo.workExperience %}#}
+{#                                            <option selected value="{{ w }}">{{ w }}</option>#}
+{#                                        {% else %}#}
+{#                                            <option value="{{ w }}">{{ w }}</option>#}
+{#                                        {% endif %}#}
+{#                                    {% endfor %}#}
+{#                                </select>#}
+                                {{ form.workExperience }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="field-1" class="col-sm-3 control-label">意向城市</label>
+
+                            <div class="col-sm-5">
+{#                                <input type="text" name="address" class="form-control" id="field-1"#}
+{#                                       value="{{ userInfo.address }}"#}
+{#                                       placeholder="请输入意向城市">#}
+                                {{ form.address }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="field-1" class="col-sm-3 control-label">意向岗位</label>
+                            <div class="col-sm-5">
+{#                                <select name="work" class="form-control">#}
+{#                                    {% for j in pageData.jobList %}#}
+{#                                        {% if j == userInfo.work %}#}
+{#                                            <option selected value="{{ j }}">{{ j }}</option>#}
+{#                                        {% else %}#}
+{#                                            <option value="{{ j }}">{{ j }}</option>#}
+{#                                        {% endif %}#}
+{#                                    {% endfor %}#}
+{#                                </select>#}
+                                {{ form.work }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">图片上传</label>
+                            <div class="col-sm-5">
+                                <div class="fileinput fileinput-new" data-provides="fileinput">
+
+                                    <input type="hidden">
+                                    <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;"
+                                         data-trigger="fileinput">
+                                        <img src="/media/{{ form.instance.avatar }}" alt="...">
+                                    </div>
+                                    <div class="fileinput-preview fileinput-exists thumbnail"
+                                         style="max-width: 200px; max-height: 150px; line-height: 6px;">
+                                    </div>
+                                    <div>
+									<span class="btn btn-white btn-file">
+										<span class="fileinput-new">选择头像</span>
+										<span class="fileinput-exists">更改</span>
+{#										<input type="file" name="avatar" accept="image/*">#}
+                                        {{ form.avatar }}
+									</span>
+                                        <a href="#" class="btn btn-orange fileinput-exists"
+                                           data-dismiss="fileinput">删除</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="field-1" class="col-sm-3 control-label">提交</label>
+                            <button type="submit" class="btn btn-success">提交</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="/static/js/fileinput.js"></script>
+{% endblock %}

@@ -1,0 +1,122 @@
+{% extends 'Rebase.html' %}
+
+{% block title %}
+    数据总览
+{% endblock %}
+
+{% block content %}
+        <ol class="breadcrumb bc-3">
+            <li>
+                <a href="#"><i class="entypo-home"></i>数据统计</a>
+            </li>
+            <li class="active">
+                <strong>数据总览</strong>
+            </li>
+        </ol>
+        <h2>数据总览</h2>
+        <br>
+        <div class="row">
+            {% for i in c_page %}
+                <div class="member-entry">
+                    <a href="{{ i.companyUrl }}" class="member-img">
+                        <img src="{{ i.companyAvatar }}" class="img-rounded">
+                        <i class="entypo-forward"></i>
+                    </a>
+
+                    <div class="member-details">
+                        <h4>
+                            <a href="{{ i.companyUrl }}" style="font-weight: bold">{{ i.companyTitle }}</a>
+                        </h4>
+
+                        <div class="row info-list">
+                            <div class="col-sm-4">
+                                <i class="entypo-briefcase"></i>
+                                <a class="text-info" href="{{ i.detailUrl }}">{{ i.title }}</a>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <i class="entypo-star"></i>
+                                <a class="text-danger" href="#">
+                                    {% if i.pratice == 0 %}
+                                        {{ i.salary }}K/月
+                                        {% if i.salaryMonth != '0' %}
+                                            ·{{ i.salaryMonth }}薪
+                                        {% endif %}
+                                    {% else %}
+                                        {{ i.salary }}元/天
+                                    {% endif %}
+                                </a>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <i class="entypo-facebook"></i>
+                                <a href="#">
+                                    {{ i.workExperience }}|{{ i.educational }}|{{ i.type }}
+                                </a>
+                            </div>
+
+                            <div class="clear"></div>
+
+                            <div class="col-sm-4">
+                                <i class="entypo-location"></i>
+                                <a href="#">{{ i.address }}</a>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <i class="entypo-mail"></i>
+                                <a href="#">{{ i.hrWork }}->{{ i.hrName }}</a>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <i class="entypo-linkedin"></i>
+                                <a href="#">{{ i.companyStatus }}|{{ i.companyPeople }}人</a>
+                            </div>
+
+                            <div class="col-sm-6">
+                                {% for i in i.workTag %}
+                                    {% if i != '' %}
+                                        <code>{{ i }}</code>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                            <div class="col-sm-6">
+                                {% if i.companyTags != '无' %}
+                                    {% for i in i.companyTags %}
+                                        {% if i != '' %}
+                                            <code style="margin-bottom: 3px;display:inline-block">{{ i }}</code>
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="row" style="display: flex;justify-content: center;">
+            <ul class="pagination">
+                {% if c_page.has_previous %}
+                    <li><a href="/myApp/tableData?page={{ c_page.previous_page_number }}"><i
+                            class="entypo-left-open-mini"></i></a></li>
+                {% endif %}
+
+                {% for i in page_range %}
+                    {% if i == c_page.number %}
+                        <li class="active"><a href="/boss/tableData?page={{ i }}">{{ i }}</a></li>
+                    {% else %}
+                        <li><a href="/boss/tableData?page={{ i }}">{{ i }}</a></li>
+                    {% endif %}
+                {% endfor %}
+
+                {% if c_page.has_next %}
+                    <li><a href="/boss/tableData?page={{ c_page.next_page_number }}"><i class="entypo-right-open-mini
+                        "></i></a></li>
+                {% endif %}
+            </ul>
+        </div>
+{% endblock %}
+{% block js %}
+<script src="/static/js/fileinput.js"></script>
+{% endblock %}
