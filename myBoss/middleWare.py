@@ -18,5 +18,5 @@ class LoginRequiredMiddleware:
         # 检查 session 中是否存在 username
         if 'username' not in request.session:
             return redirect('login')  # 重定向到登录页
-        print(request.session['username'])
+        # print(request.session['username'])
         return self.get_response(request)

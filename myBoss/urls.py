@@ -8,7 +8,7 @@ from .views import LoginView, RegistryView
 urlpatterns = [
     path('login/', LoginView.as_view(), name='login'),
     path('registry/', RegistryView.as_view(), name='registry'),
-    # path('registry/', views.registry, name='registry'),
+
     path('index/', views.index, name='index'),
     path('logOut/', views.logOut, name='logOut'),
     path('selfInfo/', views.selfInfo, name='selfInfo'),
