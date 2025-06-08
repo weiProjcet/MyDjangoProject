@@ -2,9 +2,11 @@ import json
 from myBoss.models import JobInfo
 
 
-def getTableData():
-    jobs = list(JobInfo.objects.all())
+def GetAllData():
+    return JobInfo.objects.all().order_by('id')
 
+
+def getTableData(jobs):
     def map_fn(item):
         item.salary = json.loads(item.salary)
         item.companyPeople = json.loads(item.companyPeople)

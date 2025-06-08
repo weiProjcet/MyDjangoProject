@@ -10,8 +10,10 @@ def getAllUsers():
     return User.objects.all()
 
 
+
 def getAllJobs():
     return JobInfo.objects.all()
+
 
 
 def getTypes():

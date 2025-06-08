@@ -1,6 +1,6 @@
 import hashlib
 
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger, Page
 from django.shortcuts import render, HttpResponse, redirect
 from django.views import View
 
@@ -111,22 +111,26 @@ def selfInfo(request):
 def tableData(request):
     uname = request.session.get('username')
     userInfo = User.objects.get(username=uname)
-    tableData = getTableData.getTableData()
-    paginator = Paginator(tableData, 10)
-    cur_page = 1
-    if request.GET.get('page'):
-        cur_page = int(request.GET.get('page'))
-    c_page = paginator.page(cur_page)
-    page_range = []
+    # 获取当前页码
+    cur_page = int(request.GET.get('page', 1))
+    page_size = 10
+    AllData = getTableData.GetAllData()
+    # 构造 Paginator，传入全部数据来切片（只传当前页数据有问题，无法正确判断总页数、当前是否越界）
+    paginator = Paginator(AllData, page_size)
+    try:
+        c_page = paginator.page(cur_page)
+        print(f"Current page number: {c_page.number}")
+    except EmptyPage as e:
+        print(f"EmptyPage error: {e}")
+        c_page = paginator.page(1)
+    # 替换 object_list 为处理后的数据
+    c_page.object_list = getTableData.getTableData(c_page.object_list)
+    # 页面导航栏显示的页码范围
     visibleNumber = 10
-    min = int(cur_page - visibleNumber / 10)
-    if min < 1:
-        min = 1
-    max = min + visibleNumber
-    if max > paginator.page_range[-1]:
-        max = paginator.page_range[-1]
-    for i in range(min, max):
-        page_range.append(i)
+    start = max(1, cur_page - visibleNumber // 2)
+    end = min(paginator.num_pages, start + visibleNumber)
+    page_range = range(start, end + 1)
+
     return render(request, 'tableData.html', {
         'userInfo': userInfo,
         'c_page': c_page,

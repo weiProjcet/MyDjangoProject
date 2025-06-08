@@ -16,7 +16,7 @@
         <h2>数据总览</h2>
         <br>
         <div class="row">
-            {% for i in c_page %}
+            {% for i in c_page.object_list %}
                 <div class="member-entry">
                     <a href="{{ i.companyUrl }}" class="member-img">
                         <img src="{{ i.companyAvatar }}" class="img-rounded">
@@ -98,8 +98,8 @@
         <div class="row" style="display: flex;justify-content: center;">
             <ul class="pagination">
                 {% if c_page.has_previous %}
-                    <li><a href="/myApp/tableData?page={{ c_page.previous_page_number }}"><i
-                            class="entypo-left-open-mini"></i></a></li>
+                    <li><a href="/boss/tableData?page={{ c_page.previous_page_number }}"><i
+                            class="entypo-left-open-mini"></i>上一页</a></li>
                 {% endif %}
 
                 {% for i in page_range %}
@@ -111,7 +111,7 @@
                 {% endfor %}
 
                 {% if c_page.has_next %}
-                    <li><a href="/boss/tableData?page={{ c_page.next_page_number }}"><i class="entypo-right-open-mini
+                    <li><a href="/boss/tableData?page={{ c_page.next_page_number }}">下一页<i class="entypo-right-open-mini
                         "></i></a></li>
                 {% endif %}
             </ul>

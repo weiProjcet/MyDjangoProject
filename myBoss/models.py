@@ -3,10 +3,10 @@ from django.db import models
 
 # Create your models here.
 class JobInfo(models.Model):
-    id = models.AutoField('id', primary_key=True)
+    id = models.AutoField('id', primary_key=True, db_index=True)
     title = models.CharField('岗位名字', max_length=255, default='')
     address = models.CharField('省会', max_length=255, default='')
-    type = models.CharField('职业', max_length=255, default='')
+    type = models.CharField('职业', max_length=255, default='', db_index=True)
     educational = models.CharField('学历', max_length=255, default='')
     workExperience = models.CharField('工作经历', max_length=255, default='')
     workTag = models.CharField('工作标签', max_length=2555, default='')
@@ -31,8 +31,8 @@ class JobInfo(models.Model):
 
 
 class User(models.Model):
-    id = models.AutoField('id', primary_key=True)
-    username = models.CharField('用户名', max_length=255, default='', unique=True, db_index=True)
+    id = models.AutoField('id', primary_key=True,db_index=True)
+    username = models.CharField('用户名', max_length=255, unique=True, db_index=True)
     password = models.CharField('密码', max_length=255, default='')
     educational = models.CharField('学历', max_length=255, default='')
     workExperience = models.CharField('工作经历', max_length=255, default='')
@@ -46,7 +46,7 @@ class User(models.Model):
 
 
 class History(models.Model):
-    id = models.AutoField('id', primary_key=True)
+    id = models.AutoField('id', primary_key=True,  db_index=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, db_index=True)
     job = models.ForeignKey(JobInfo, on_delete=models.CASCADE)
     count = models.IntegerField("点击次数", default=1)
