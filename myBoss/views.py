@@ -6,9 +6,7 @@ from django.views import View
 
 from myBoss.models import User
 from myBoss.utils import getSelfInfo, getTableData, getHistoryData
-from myBoss.utils.error import errorResponse
 import myBoss.utils.getHomeData as getHomeData
-import myBoss.utils.getPublicData as getPublicData
 from myBoss.utils.forms import LoginForm, RegistryForm, selfInfoForm
 
 

@@ -21,9 +21,9 @@
     <script src="/static/js/jquery-1.11.0.min.js"></script>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-{% block css %}
+    {% block css %}
 
-{% endblock %}
+    {% endblock %}
 </head>
 <body class="page-body  page-left-in" data-url="http://neon.dev">
 
@@ -48,24 +48,24 @@
             </div>
         </div>
         <ul id="main-menu" class="">
-            <li class="opened active">
+            <li class="{% if request.resolver_match.url_name == 'index' %}opened active{% endif %}">
                 <a href="/boss/index">
                     <i class="entypo-gauge"></i>
                     <span>首页</span>
                 </a>
             </li>
-            <li>
+            <li class="{% if request.resolver_match.url_name == 'tableData' or request.resolver_match.url_name == 'historyTableData' %}opened active{% endif %}">
                 <a href="#">
                     <i class="entypo-layout"></i>
                     <span>数据统计</span>
                 </a>
                 <ul>
-                    <li>
+                    <li class="{% if request.resolver_match.url_name == 'tableData' %}active{% endif %}">
                         <a href="/boss/tableData">
                             <span>数据总览</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="{% if request.resolver_match.url_name == 'historyTableData' %}active{% endif %}">
                         <a href="/boss/historyTableData">
                             <span>历史查阅</span>
                         </a>
@@ -117,13 +117,13 @@
                     </li>
                 </ul>
             </li>
-            <li>
+            <li class="{% if request.resolver_match.url_name == 'selfInfo' or request.resolver_match.url_name == 'changePassword' %}opened active{% endif %}">
                 <a href="#">
                     <i class="entypo-user"></i>
                     <span>个人中心</span>
                 </a>
                 <ul>
-                    <li>
+                    <li class="{% if request.resolver_match.url_name == 'selfInfo' %}active{% endif %}">
                         <a href="/boss/selfInfo">
                             <span>个人信息</span>
                         </a>
