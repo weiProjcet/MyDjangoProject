@@ -72,7 +72,7 @@
                     </li>
                 </ul>
             </li>
-            <li>
+            <li class="{% if request.resolver_match.url_name in 'companyTags' %}opened active{% endif %}">
                 <a href="#">
                     <i class="entypo-chart-pie"></i>
                     <span>可视化图表</span>
@@ -91,7 +91,7 @@
                             <span>企业情况</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="{% if request.resolver_match.url_name == 'companyTags' %}active{% endif %}">
                         <a href="/boss/companyTags">
                             <i class="entypo-lamp"></i>
                             <span>福利词云</span>
@@ -145,8 +145,7 @@
             <div style="margin-left: auto" class="col-md-6 col-sm-4 clearfix hidden-xs">
                 <ul class="list-inline links-list pull-right">
                     <li>
-                        <a href="{% url 'download_jobs' %}" class="btn btn-primary">下载数据 (CSV)</a>
-
+                        <a href="{% url 'download_jobs' %}">下载数据 (CSV)</a>
                     </li>
                     <li class="sep"></li>
                     <li>

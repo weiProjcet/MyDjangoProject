@@ -18,4 +18,7 @@ urlpatterns = [
     path('historyTableData/', views.historyTableData, name='historyTableData'),
     path('addHistory/<int:jobId>/', views.addHistory, name='addHistory'),
     path('removeHistory/<int:hisId>/', views.removeHistory, name='removeHistory'),
+
+    path('companyTags/', views.companyTags, name='companyTags'),
+    path('download_companyTags', views.download_companyTags, name='download_companyTags'),
 ]

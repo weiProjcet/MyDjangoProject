@@ -1,0 +1,49 @@
+{% extends "Rebase.html" %}
+{% load static %}
+{% block title %}
+    福利词云
+{% endblock %}
+{% block content %}
+    <ol class="breadcrumb bc-3">
+        <li>
+            <a href="#"><i class="entypo-home"></i>可视化图表</a>
+        </li>
+        <li class="active">
+            <strong>福利词云</strong>
+        </li>
+    </ol>
+    <h2>福利词云</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-info" data-collapsed="0">
+                <div class="panel-heading">
+                    <div class="panel-title">公司福利</div>
+                    <a href="{% url 'download_companyTags' %}" class="panel-title">下载图片</a>
+                    <div class="panel-options">
+                        <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+                        <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <img style="width: 100%" src="/media/companyTags_cloud.jpg' %}">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-info" data-collapsed="0">
+                <div class="panel-heading">
+                    <div class="panel-title">公司名字</div>
+                    <div class="panel-options">
+                        <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+                        <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <img style="width: 100%" src="{% static 'companyTags_cloud1.jpg' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

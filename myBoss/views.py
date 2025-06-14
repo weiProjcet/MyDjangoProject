@@ -1,12 +1,16 @@
+import base64
 import csv
+import os
 import hashlib
 
+from django.conf import settings
 from django.core.cache import cache
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger, Page
-from django.http import HttpResponse
+from django.http import HttpResponse, FileResponse
 from django.shortcuts import render, redirect
 from django.views import View
 
+from . import word_cloud_picture
 from .models import User, JobInfo
 from .utils import getSelfInfo, getTableData, getHistoryData
 import myBoss.utils.getHomeData as getHomeData
@@ -208,3 +212,49 @@ def addHistory(request, jobId):
 def removeHistory(request, hisId):
     getHistoryData.removeHistory(hisId)
     return redirect('historyTableData')
+
+
+def download_companyTags(request):
+    uname = request.session.get('username')
+    userInfo = User.objects.get(username=uname)
+
+    cache_key = f'companyTags_cloud_{uname}'
+    image_data = cache.get(cache_key)
+
+    if image_data:
+        content = base64.b64decode(image_data)
+        response = HttpResponse(content, content_type='image/jpeg')
+        response['Content-Disposition'] = 'attachment; filename="companyTags_cloud.jpg"'
+        return response
+    else:
+        return HttpResponse("图片尚未生成，请先生成词云图片。", status=404)
+
+
+def companyTags(request):
+    uname = request.session.get('username')
+    userInfo = User.objects.get(username=uname)
+    # 获取 static 文件夹的绝对路径
+    STATIC_ROOT = os.path.join(settings.BASE_DIR, 'myBoss', 'static')
+
+    # 使用
+    template_path = os.path.join(STATIC_ROOT, '1.jpg')
+    output_path = os.path.join(settings.MEDIA_ROOT, f'companyTags_cloud_{uname}.jpg')
+
+    cache_key = f'companyTags_cloud_{uname}'
+    # 尝试从缓存获取图片数据
+    image_data = cache.get(cache_key)
+    if not image_data:
+        # 如果不存在，生成图片并缓存
+        word_cloud_picture.get_img('companyTags', template_path, output_path)
+        with open(output_path, 'rb') as f:
+            image_data = base64.b64encode(f.read()).decode('utf-8')
+        cache.set(cache_key, image_data, timeout=60 * 15)  # 缓存15分钟
+
+    # 解码为二进制写入文件供前端访问
+    if not os.path.exists(output_path):
+        with open(output_path, 'wb') as f:
+            f.write(base64.b64decode(image_data))
+
+    return render(request, 'companyTags.html', {
+        'userInfo': userInfo
+    })

@@ -53,3 +53,685 @@ INFO 2025-06-14 11:37:54,228 basehttp "GET /boss/logOut HTTP/1.1" 301 0
 INFO 2025-06-14 11:37:54,241 views 用户wei登出
 INFO 2025-06-14 11:37:54,246 basehttp "GET /boss/logOut/ HTTP/1.1" 302 0
 INFO 2025-06-14 11:37:54,255 basehttp "GET /boss/login/ HTTP/1.1" 200 4170
+INFO 2025-06-14 17:19:15,427 autoreload Watching for file changes with StatReloader
+INFO 2025-06-14 17:19:54,392 autoreload Watching for file changes with StatReloader
+INFO 2025-06-14 17:20:56,647 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-06-14 17:20:56,692 basehttp "GET /boss/login/ HTTP/1.1" 200 4170
+INFO 2025-06-14 17:20:57,043 basehttp "GET /static/css/neon-core.css HTTP/1.1" 200 228937
+INFO 2025-06-14 17:20:57,054 basehttp "GET /static/css/bootstrap.css HTTP/1.1" 200 218530
+INFO 2025-06-14 17:20:57,058 basehttp "GET /static/js/jquery-ui-1.10.3.minimal.min.js HTTP/1.1" 200 99100
+INFO 2025-06-14 17:20:57,062 basehttp "GET /static/js/bootstrap.js HTTP/1.1" 200 58326
+INFO 2025-06-14 17:20:57,067 basehttp "GET /static/js/joinable.js HTTP/1.1" 200 119975
+INFO 2025-06-14 17:20:57,068 basehttp "GET /static/js/resizeable.js HTTP/1.1" 200 2406
+INFO 2025-06-14 17:20:57,068 basehttp "GET /static/css/custom.css HTTP/1.1" 200 54
+INFO 2025-06-14 17:20:57,073 basehttp "GET /static/js/jquery.validate.min.js HTTP/1.1" 200 21068
+INFO 2025-06-14 17:20:57,073 basehttp "GET /static/js/neon-api.js HTTP/1.1" 200 13926
+INFO 2025-06-14 17:20:57,079 basehttp "GET /static/js/neon-login.js HTTP/1.1" 200 6541
+INFO 2025-06-14 17:20:57,080 basehttp "GET /static/js/neon-custom.js HTTP/1.1" 200 48302
+INFO 2025-06-14 17:20:57,083 basehttp "GET /static/js/neon-demo.js HTTP/1.1" 200 1964
+INFO 2025-06-14 17:20:57,087 basehttp "GET /static/js/main-gsap.js HTTP/1.1" 200 99007
+INFO 2025-06-14 17:20:57,108 basehttp "GET /static/js/jquery-1.11.0.min.js HTTP/1.1" 200 96381
+INFO 2025-06-14 17:20:57,129 basehttp "GET /static/css/neon-forms.css HTTP/1.1" 200 180659
+INFO 2025-06-14 17:20:57,163 basehttp "GET /static/css/neon-theme.css HTTP/1.1" 200 178407
+INFO 2025-06-14 17:20:58,756 basehttp "GET /favicon.ico HTTP/1.1" 302 0
+INFO 2025-06-14 17:20:58,788 basehttp "GET /boss/login/ HTTP/1.1" 200 4170
+INFO 2025-06-14 17:21:04,275 views 用户尝试登录
+INFO 2025-06-14 17:21:04,291 views 用户wei登录成功
+INFO 2025-06-14 17:21:04,310 basehttp "POST /boss/login/ HTTP/1.1" 302 0
+INFO 2025-06-14 17:21:04,450 basehttp "GET /boss/index/ HTTP/1.1" 200 45423
+INFO 2025-06-14 17:21:04,502 basehttp "GET /static/css/jquery-ui-1.10.3.custom.min.css HTTP/1.1" 200 12225
+INFO 2025-06-14 17:21:04,503 basehttp "GET /static/css/css.css HTTP/1.1" 200 6386
+INFO 2025-06-14 17:21:04,503 basehttp "GET /static/css/entypo.css HTTP/1.1" 200 18071
+INFO 2025-06-14 17:21:04,540 basehttp "GET /media/avatar/1728188359295_nXnsrAd.jpg HTTP/1.1" 200 1532730
+INFO 2025-06-14 17:21:04,725 basehttp "GET /static/css/jquery-jvectormap-1.2.2.css HTTP/1.1" 200 936
+INFO 2025-06-14 17:21:04,732 basehttp "GET /static/css/rickshaw.min.css HTTP/1.1" 200 6044
+INFO 2025-06-14 17:21:04,741 basehttp "GET /static/css/datatables.responsive.css HTTP/1.1" 200 622
+INFO 2025-06-14 17:21:04,778 basehttp "GET /static/js/jquery-jvectormap-1.2.2.min.js HTTP/1.1" 200 33323
+INFO 2025-06-14 17:21:04,786 basehttp "GET /static/js/jquery-jvectormap-europe-merc-en.js HTTP/1.1" 200 148738
+INFO 2025-06-14 17:21:04,793 basehttp "GET /static/js/jquery-jvectormap-world-mill-en.js HTTP/1.1" 200 144318
+INFO 2025-06-14 17:21:04,799 basehttp "GET /static/js/jquery.sparkline.min.js HTTP/1.1" 200 123532
+INFO 2025-06-14 17:21:04,806 basehttp "GET /static/js/d3.v3.js HTTP/1.1" 200 144718
+INFO 2025-06-14 17:21:04,818 basehttp "GET /static/js/rickshaw.min.js HTTP/1.1" 200 74756
+INFO 2025-06-14 17:21:04,825 basehttp "GET /static/js/neon-chat.js HTTP/1.1" 200 18696
+INFO 2025-06-14 17:21:04,877 basehttp "GET /static/js/echarts.js HTTP/1.1" 200 3058460
+INFO 2025-06-14 17:21:10,452 basehttp "GET /static/font/entypo.woff HTTP/1.1" 200 40320
+WARNING 2025-06-14 17:21:11,084 log Not Found: /favicon.ico
+WARNING 2025-06-14 17:21:11,084 basehttp "GET /favicon.ico HTTP/1.1" 404 2529
+INFO 2025-06-14 17:21:14,628 basehttp "GET /boss/selfInfo HTTP/1.1" 301 0
+INFO 2025-06-14 17:21:14,649 basehttp "GET /boss/selfInfo/ HTTP/1.1" 200 13222
+INFO 2025-06-14 17:21:14,757 basehttp "GET /static/js/fileinput.js HTTP/1.1" 200 6328
+INFO 2025-06-14 17:21:27,734 basehttp "GET /boss/tableData HTTP/1.1" 301 0
+INFO 2025-06-14 17:21:29,018 basehttp "GET /boss/tableData/ HTTP/1.1" 200 68713
+INFO 2025-06-14 17:21:37,957 basehttp "GET /static/font/o-0IIpQlx3QUlC5A4PNr5TRA.woff2 HTTP/1.1" 200 16056
+INFO 2025-06-14 17:21:44,291 basehttp "GET /boss/companyTags HTTP/1.1" 301 0
+ERROR 2025-06-14 17:21:44,569 log Internal Server Error: /boss/companyTags/
+Traceback (most recent call last):
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\myBoss\views.py", line 217, in companyTags
+    word_cloud_picture.get_img('companyTags', './static/1.jpg', './static/companyTags_cloud.jpg')
+  File "E:\PythonProject\myProjects\myBoss\word_cloud_picture.py", line 11, in get_img
+    con = connect(host='localhost', user='root', password='123123', database='bossinfo', port=3306, charset='utf8mb4')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\pymysql\connections.py", line 669, in connect
+    self._request_authentication()
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\pymysql\connections.py", line 979, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\pymysql\_auth.py", line 268, in caching_sha2_password_auth
+    pkt = _roundtrip(conn, data)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\pymysql\_auth.py", line 121, in _roundtrip
+    pkt = conn._read_packet()
+          ^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+ERROR 2025-06-14 17:21:44,578 basehttp "GET /boss/companyTags/ HTTP/1.1" 500 119962
+INFO 2025-06-14 17:23:19,279 autoreload E:\PythonProject\myProjects\myBoss\word_cloud_picture.py changed, reloading.
+INFO 2025-06-14 17:23:20,203 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-14 17:23:25,037 log Internal Server Error: /boss/companyTags/
+Traceback (most recent call last):
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\myBoss\views.py", line 217, in companyTags
+    word_cloud_picture.get_img('companyTags', './static/1.jpg', './static/companyTags_cloud.jpg')
+  File "E:\PythonProject\myProjects\myBoss\word_cloud_picture.py", line 34, in get_img
+    img = Image.open(targetImgSrc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\PIL\Image.py", line 3505, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './static/1.jpg'
+ERROR 2025-06-14 17:23:25,040 basehttp "GET /boss/companyTags/ HTTP/1.1" 500 108964
+INFO 2025-06-14 17:24:43,015 autoreload E:\PythonProject\myProjects\myBoss\views.py changed, reloading.
+INFO 2025-06-14 17:24:44,050 autoreload Watching for file changes with StatReloader
+INFO 2025-06-14 17:24:48,116 basehttp "GET /boss/tableData/ HTTP/1.1" 200 68713
+ERROR 2025-06-14 17:25:08,967 log Internal Server Error: /boss/companyTags/
+Traceback (most recent call last):
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\myBoss\views.py", line 217, in companyTags
+    word_cloud_picture.get_img('companyTags', '../static/1.jpg', '../static/companyTags_cloud.jpg')
+  File "E:\PythonProject\myProjects\myBoss\word_cloud_picture.py", line 34, in get_img
+    img = Image.open(targetImgSrc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\PIL\Image.py", line 3505, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../static/1.jpg'
+ERROR 2025-06-14 17:25:08,967 basehttp "GET /boss/companyTags/ HTTP/1.1" 500 108842
+INFO 2025-06-14 18:04:19,485 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-14 18:04:21,651 log Not Found: /
+WARNING 2025-06-14 18:04:21,652 basehttp "GET / HTTP/1.1" 404 2478
+INFO 2025-06-14 18:04:33,603 basehttp "GET /boss/login HTTP/1.1" 301 0
+INFO 2025-06-14 18:04:33,639 basehttp "GET /boss/login/ HTTP/1.1" 200 4170
+INFO 2025-06-14 18:04:39,235 views 用户尝试登录
+INFO 2025-06-14 18:04:39,241 views 用户wei登录成功
+INFO 2025-06-14 18:04:39,246 basehttp "POST /boss/login/ HTTP/1.1" 302 0
+INFO 2025-06-14 18:04:39,335 basehttp "GET /boss/index/ HTTP/1.1" 200 45423
+INFO 2025-06-14 18:04:55,779 basehttp "GET /boss/tableData/ HTTP/1.1" 200 68713
+INFO 2025-06-14 18:05:11,025 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8686
+WARNING 2025-06-14 18:05:11,097 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
+INFO 2025-06-14 18:05:11,128 basehttp "GET /static/companyTags_cloud.jpg HTTP/1.1" 200 1227444
+INFO 2025-06-14 18:06:32,629 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8686
+WARNING 2025-06-14 18:06:32,687 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
+INFO 2025-06-14 18:06:32,691 basehttp "GET /static/companyTags_cloud.jpg HTTP/1.1" 200 1249159
+INFO 2025-06-14 21:09:00,478 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-14 21:09:04,089 log Not Found: /
+WARNING 2025-06-14 21:09:04,089 basehttp "GET / HTTP/1.1" 404 2478
+WARNING 2025-06-14 21:09:06,106 log Not Found: /favicon.ico
+WARNING 2025-06-14 21:09:06,106 basehttp "GET /favicon.ico HTTP/1.1" 404 2529
+INFO 2025-06-14 21:09:21,593 basehttp "GET /boss/login HTTP/1.1" 301 0
+INFO 2025-06-14 21:09:21,614 basehttp "GET /boss/login/ HTTP/1.1" 200 4170
+INFO 2025-06-14 21:09:21,813 basehttp "GET /static/css/neon-core.css HTTP/1.1" 200 228937
+INFO 2025-06-14 21:09:21,820 basehttp "GET /static/js/main-gsap.js HTTP/1.1" 200 99007
+INFO 2025-06-14 21:09:21,824 basehttp "GET /static/css/custom.css HTTP/1.1" 200 54
+INFO 2025-06-14 21:09:21,829 basehttp "GET /static/js/jquery-1.11.0.min.js HTTP/1.1" 200 96381
+INFO 2025-06-14 21:09:21,829 basehttp "GET /static/css/bootstrap.css HTTP/1.1" 200 218530
+INFO 2025-06-14 21:09:21,832 basehttp "GET /static/js/jquery-ui-1.10.3.minimal.min.js HTTP/1.1" 200 99100
+INFO 2025-06-14 21:09:21,834 basehttp "GET /static/js/bootstrap.js HTTP/1.1" 200 58326
+INFO 2025-06-14 21:09:21,834 basehttp "GET /static/css/neon-forms.css HTTP/1.1" 200 180659
+INFO 2025-06-14 21:09:21,835 basehttp "GET /static/js/resizeable.js HTTP/1.1" 200 2406
+INFO 2025-06-14 21:09:21,837 basehttp "GET /static/css/neon-theme.css HTTP/1.1" 200 178407
+INFO 2025-06-14 21:09:21,839 basehttp "GET /static/js/neon-login.js HTTP/1.1" 200 6541
+INFO 2025-06-14 21:09:21,839 basehttp "GET /static/js/neon-api.js HTTP/1.1" 200 13926
+INFO 2025-06-14 21:09:21,839 basehttp "GET /static/js/jquery.validate.min.js HTTP/1.1" 200 21068
+INFO 2025-06-14 21:09:21,844 basehttp "GET /static/js/neon-demo.js HTTP/1.1" 200 1964
+INFO 2025-06-14 21:09:21,844 basehttp "GET /static/js/joinable.js HTTP/1.1" 200 119975
+INFO 2025-06-14 21:09:21,847 basehttp "GET /static/js/neon-custom.js HTTP/1.1" 200 48302
+INFO 2025-06-14 21:09:27,835 views 用户尝试登录
+INFO 2025-06-14 21:09:27,840 views 用户wei登录成功
+INFO 2025-06-14 21:09:27,846 basehttp "POST /boss/login/ HTTP/1.1" 302 0
+INFO 2025-06-14 21:09:27,942 basehttp "GET /boss/index/ HTTP/1.1" 200 45423
+INFO 2025-06-14 21:09:27,997 basehttp "GET /static/css/jquery-ui-1.10.3.custom.min.css HTTP/1.1" 200 12225
+INFO 2025-06-14 21:09:27,999 basehttp "GET /static/css/css.css HTTP/1.1" 200 6386
+INFO 2025-06-14 21:09:27,999 basehttp "GET /static/css/entypo.css HTTP/1.1" 200 18071
+INFO 2025-06-14 21:09:28,025 basehttp "GET /media/avatar/1728188359295_nXnsrAd.jpg HTTP/1.1" 200 1532730
+INFO 2025-06-14 21:09:28,147 basehttp "GET /static/css/jquery-jvectormap-1.2.2.css HTTP/1.1" 200 936
+INFO 2025-06-14 21:09:28,149 basehttp "GET /static/css/rickshaw.min.css HTTP/1.1" 200 6044
+INFO 2025-06-14 21:09:28,152 basehttp "GET /static/css/datatables.responsive.css HTTP/1.1" 200 622
+INFO 2025-06-14 21:09:28,171 basehttp "GET /static/js/jquery-jvectormap-1.2.2.min.js HTTP/1.1" 200 33323
+INFO 2025-06-14 21:09:28,177 basehttp "GET /static/js/jquery-jvectormap-europe-merc-en.js HTTP/1.1" 200 148738
+INFO 2025-06-14 21:09:28,182 basehttp "GET /static/js/jquery-jvectormap-world-mill-en.js HTTP/1.1" 200 144318
+INFO 2025-06-14 21:09:28,184 basehttp "GET /static/js/jquery.sparkline.min.js HTTP/1.1" 200 123532
+INFO 2025-06-14 21:09:28,190 basehttp "GET /static/js/d3.v3.js HTTP/1.1" 200 144718
+INFO 2025-06-14 21:09:28,195 basehttp "GET /static/js/rickshaw.min.js HTTP/1.1" 200 74756
+INFO 2025-06-14 21:09:28,202 basehttp "GET /static/js/neon-chat.js HTTP/1.1" 200 18696
+INFO 2025-06-14 21:09:28,225 basehttp "GET /static/js/echarts.js HTTP/1.1" 200 3058460
+INFO 2025-06-14 21:09:31,384 basehttp "GET /static/font/entypo.woff HTTP/1.1" 200 40320
+INFO 2025-06-14 21:09:37,601 basehttp "GET /boss/selfInfo HTTP/1.1" 301 0
+INFO 2025-06-14 21:09:37,641 basehttp "GET /boss/selfInfo/ HTTP/1.1" 200 13222
+INFO 2025-06-14 21:09:37,750 basehttp "GET /static/js/fileinput.js HTTP/1.1" 200 6328
+INFO 2025-06-14 21:09:54,328 basehttp "GET /boss/index HTTP/1.1" 301 0
+INFO 2025-06-14 21:09:54,402 basehttp "GET /boss/index/ HTTP/1.1" 200 45423
+INFO 2025-06-14 21:10:03,729 basehttp "GET /boss/index/?page=2 HTTP/1.1" 200 45687
+INFO 2025-06-14 21:10:19,045 basehttp "GET /boss/tableData HTTP/1.1" 301 0
+INFO 2025-06-14 21:10:19,130 basehttp "GET /boss/tableData/ HTTP/1.1" 200 68713
+INFO 2025-06-14 21:10:23,319 basehttp "GET /static/font/o-0IIpQlx3QUlC5A4PNr5TRA.woff2 HTTP/1.1" 200 16056
+INFO 2025-06-14 21:10:38,250 basehttp "GET /boss/historyTableData HTTP/1.1" 301 0
+INFO 2025-06-14 21:10:38,296 basehttp "GET /boss/historyTableData/ HTTP/1.1" 200 21559
+INFO 2025-06-14 21:11:50,318 basehttp "GET /boss/index/ HTTP/1.1" 200 45423
+INFO 2025-06-14 21:12:03,445 basehttp "GET /static/image/loader-2.gif HTTP/1.1" 200 422
+INFO 2025-06-14 21:12:12,377 basehttp "GET /boss/companyTags HTTP/1.1" 301 0
+INFO 2025-06-14 21:12:16,173 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8783
+INFO 2025-06-14 21:12:16,230 basehttp "GET /static/companyTags_cloud.jpg HTTP/1.1" 200 1064256
+WARNING 2025-06-14 21:12:16,241 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
+INFO 2025-06-14 21:12:28,725 basehttp "GET /boss/download_companyTags HTTP/1.1" 200 1064256
+INFO 2025-06-14 21:25:20,990 basehttp "GET /boss/index/ HTTP/1.1" 200 45423
+INFO 2025-06-14 21:25:31,007 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8783
+INFO 2025-06-14 21:25:31,073 basehttp "GET /static/companyTags_cloud.jpg HTTP/1.1" 200 1108718
+WARNING 2025-06-14 21:25:31,084 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
+INFO 2025-06-14 21:26:35,697 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8905
+INFO 2025-06-14 21:26:35,750 basehttp "GET /static/companyTags_cloud.jpg HTTP/1.1" 200 1282461
+WARNING 2025-06-14 21:26:35,759 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
+INFO 2025-06-14 21:27:33,728 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8803
+INFO 2025-06-14 21:27:33,781 basehttp "GET /static/companyTags_cloud.jpg HTTP/1.1" 200 1056608
+WARNING 2025-06-14 21:27:33,792 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
+INFO 2025-06-14 21:35:26,930 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8860
+INFO 2025-06-14 21:35:26,984 basehttp "GET /static/companyTags_cloud.jpg HTTP/1.1" 200 1174442
+WARNING 2025-06-14 21:35:27,011 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
+INFO 2025-06-14 21:42:11,574 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8835
+INFO 2025-06-14 21:42:11,634 basehttp "GET /static/companyTags_cloud.jpg HTTP/1.1" 200 1091452
+WARNING 2025-06-14 21:42:11,647 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
+INFO 2025-06-14 21:43:10,295 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8889
+INFO 2025-06-14 21:43:10,348 basehttp "GET /static/companyTags_cloud.jpg HTTP/1.1" 200 1194023
+WARNING 2025-06-14 21:43:10,357 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
+INFO 2025-06-14 21:43:38,138 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8963
+INFO 2025-06-14 21:43:38,191 basehttp "GET /static/companyTags_cloud.jpg HTTP/1.1" 200 1208912
+WARNING 2025-06-14 21:43:38,200 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
+INFO 2025-06-14 21:43:58,874 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8983
+INFO 2025-06-14 21:43:58,928 basehttp "GET /static/companyTags_cloud.jpg HTTP/1.1" 200 1248120
+WARNING 2025-06-14 21:43:58,938 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
+INFO 2025-06-14 21:44:34,711 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8755
+INFO 2025-06-14 21:44:34,772 basehttp "GET /static/companyTags_cloud.jpg HTTP/1.1" 200 1274066
+WARNING 2025-06-14 21:44:34,781 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
+INFO 2025-06-14 23:14:33,417 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-14 23:14:35,810 log Not Found: /
+WARNING 2025-06-14 23:14:35,810 basehttp "GET / HTTP/1.1" 404 2478
+WARNING 2025-06-14 23:14:37,714 log Not Found: /favicon.ico
+WARNING 2025-06-14 23:14:37,714 basehttp "GET /favicon.ico HTTP/1.1" 404 2529
+INFO 2025-06-14 23:14:45,219 basehttp "GET /boss/login/ HTTP/1.1" 200 4170
+INFO 2025-06-14 23:14:50,472 views 用户尝试登录
+INFO 2025-06-14 23:14:50,492 views 用户wei登录成功
+INFO 2025-06-14 23:14:50,499 basehttp "POST /boss/login/ HTTP/1.1" 302 0
+INFO 2025-06-14 23:14:50,584 basehttp "GET /boss/index/ HTTP/1.1" 200 45398
+INFO 2025-06-14 23:14:58,222 basehttp "GET /boss/selfInfo/ HTTP/1.1" 200 13197
+INFO 2025-06-14 23:15:12,800 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8755
+INFO 2025-06-14 23:15:12,856 basehttp "GET /static/companyTags_cloud.jpg HTTP/1.1" 304 0
+WARNING 2025-06-14 23:15:12,878 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
+INFO 2025-06-14 23:15:24,325 basehttp "GET /boss/download_companyTags HTTP/1.1" 200 1217304
+INFO 2025-06-14 23:15:27,823 basehttp "GET /boss/index/ HTTP/1.1" 200 45398
+INFO 2025-06-14 23:15:32,408 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8755
+WARNING 2025-06-14 23:15:32,482 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
+INFO 2025-06-14 23:21:15,943 basehttp "GET /boss/index/ HTTP/1.1" 200 45398
+INFO 2025-06-14 23:21:23,505 basehttp "GET /boss/tableData/ HTTP/1.1" 200 68688
+INFO 2025-06-14 23:22:37,808 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8755
+WARNING 2025-06-14 23:22:37,894 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
+INFO 2025-06-14 23:22:46,136 basehttp "GET /boss/download_companyTags HTTP/1.1" 200 1217304
+INFO 2025-06-14 23:36:21,713 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-14 23:36:24,640 log Not Found: /
+WARNING 2025-06-14 23:36:24,641 basehttp "GET / HTTP/1.1" 404 2478
+INFO 2025-06-14 23:36:33,408 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8755
+INFO 2025-06-14 23:36:33,454 basehttp "GET /static/companyTags_cloud.jpg HTTP/1.1" 304 0
+WARNING 2025-06-14 23:36:33,488 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
+ERROR 2025-06-14 23:56:50,491 log Internal Server Error: /boss/companyTags/
+Traceback (most recent call last):
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "'tableData，historyTableData'|split(',')"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\myBoss\views.py", line 258, in companyTags
+    return render(request, 'companyTags.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'split'
+ERROR 2025-06-14 23:56:50,497 basehttp "GET /boss/companyTags/ HTTP/1.1" 500 232574
+INFO 2025-06-15 00:03:29,746 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-15 00:03:33,409 log Not Found: /
+WARNING 2025-06-15 00:03:33,409 basehttp "GET / HTTP/1.1" 404 2478
+WARNING 2025-06-15 00:03:35,670 log Not Found: /favicon.ico
+WARNING 2025-06-15 00:03:35,670 basehttp "GET /favicon.ico HTTP/1.1" 404 2529
+INFO 2025-06-15 00:03:47,213 basehttp "GET /boss/login HTTP/1.1" 301 0
+INFO 2025-06-15 00:03:47,243 basehttp "GET /boss/login/ HTTP/1.1" 200 4170
+INFO 2025-06-15 00:03:47,454 basehttp "GET /static/css/bootstrap.css HTTP/1.1" 200 218530
+INFO 2025-06-15 00:03:47,457 basehttp "GET /static/js/main-gsap.js HTTP/1.1" 200 99007
+INFO 2025-06-15 00:03:47,464 basehttp "GET /static/css/custom.css HTTP/1.1" 200 54
+INFO 2025-06-15 00:03:47,466 basehttp "GET /static/css/neon-core.css HTTP/1.1" 200 228937
+INFO 2025-06-15 00:03:47,470 basehttp "GET /static/js/jquery-ui-1.10.3.minimal.min.js HTTP/1.1" 200 99100
+INFO 2025-06-15 00:03:47,473 basehttp "GET /static/js/jquery-1.11.0.min.js HTTP/1.1" 200 96381
+INFO 2025-06-15 00:03:47,474 basehttp "GET /static/js/resizeable.js HTTP/1.1" 200 2406
+INFO 2025-06-15 00:03:47,475 basehttp "GET /static/js/bootstrap.js HTTP/1.1" 200 58326
+INFO 2025-06-15 00:03:47,476 basehttp "GET /static/css/neon-forms.css HTTP/1.1" 200 180659
+INFO 2025-06-15 00:03:47,477 basehttp "GET /static/js/neon-api.js HTTP/1.1" 200 13926
+INFO 2025-06-15 00:03:47,479 basehttp "GET /static/css/neon-theme.css HTTP/1.1" 200 178407
+INFO 2025-06-15 00:03:47,481 basehttp "GET /static/js/joinable.js HTTP/1.1" 200 119975
+INFO 2025-06-15 00:03:47,484 basehttp "GET /static/js/neon-login.js HTTP/1.1" 200 6541
+INFO 2025-06-15 00:03:47,484 basehttp "GET /static/js/neon-demo.js HTTP/1.1" 200 1964
+INFO 2025-06-15 00:03:47,484 basehttp "GET /static/js/jquery.validate.min.js HTTP/1.1" 200 21068
+INFO 2025-06-15 00:03:47,484 basehttp "GET /static/js/neon-custom.js HTTP/1.1" 200 48302
+INFO 2025-06-15 00:03:53,407 views 用户尝试登录
+INFO 2025-06-15 00:03:53,432 views 用户wei登录成功
+INFO 2025-06-15 00:03:53,437 basehttp "POST /boss/login/ HTTP/1.1" 302 0
+ERROR 2025-06-15 00:03:53,575 log Internal Server Error: /boss/index/
+Traceback (most recent call last):
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "'tableData，historyTableData'|split:','"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\myBoss\views.py", line 100, in index
+    return render(request, 'index.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'split'
+ERROR 2025-06-15 00:03:53,593 basehttp "GET /boss/index/ HTTP/1.1" 500 234198
+ERROR 2025-06-15 00:04:59,995 log Internal Server Error: /boss/index/
+Traceback (most recent call last):
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "'tableData,historyTableData'|split:','"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\myBoss\views.py", line 100, in index
+    return render(request, 'index.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'split'
+ERROR 2025-06-15 00:05:00,000 basehttp "GET /boss/index/ HTTP/1.1" 500 234162
+ERROR 2025-06-15 00:07:35,697 log Internal Server Error: /boss/index/
+Traceback (most recent call last):
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "=='historyTableData'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\myBoss\views.py", line 100, in index
+    return render(request, 'index.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PythonProject\myProjects\venv\Lib\site-packages\django\template\base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '=='historyTableData'' from '=='historyTableData''
+ERROR 2025-06-15 00:07:35,703 basehttp "GET /boss/index/ HTTP/1.1" 500 227593
+INFO 2025-06-15 00:08:20,389 basehttp "GET /boss/index/ HTTP/1.1" 200 45416
+INFO 2025-06-15 00:08:20,434 basehttp "GET /static/css/css.css HTTP/1.1" 200 6386
+INFO 2025-06-15 00:08:20,434 basehttp "GET /static/css/jquery-ui-1.10.3.custom.min.css HTTP/1.1" 200 12225
+INFO 2025-06-15 00:08:20,434 basehttp "GET /static/css/entypo.css HTTP/1.1" 200 18071
+INFO 2025-06-15 00:08:20,462 basehttp "GET /media/avatar/1728188359295_nXnsrAd.jpg HTTP/1.1" 200 1532730
+INFO 2025-06-15 00:08:20,547 basehttp "GET /static/css/jquery-jvectormap-1.2.2.css HTTP/1.1" 200 936
+INFO 2025-06-15 00:08:20,550 basehttp "GET /static/css/rickshaw.min.css HTTP/1.1" 200 6044
+INFO 2025-06-15 00:08:20,556 basehttp "GET /static/css/datatables.responsive.css HTTP/1.1" 200 622
+INFO 2025-06-15 00:08:20,582 basehttp "GET /static/js/jquery-jvectormap-1.2.2.min.js HTTP/1.1" 200 33323
+INFO 2025-06-15 00:08:20,587 basehttp "GET /static/js/jquery-jvectormap-europe-merc-en.js HTTP/1.1" 200 148738
+INFO 2025-06-15 00:08:20,593 basehttp "GET /static/js/jquery-jvectormap-world-mill-en.js HTTP/1.1" 200 144318
+INFO 2025-06-15 00:08:20,596 basehttp "GET /static/js/jquery.sparkline.min.js HTTP/1.1" 200 123532
+INFO 2025-06-15 00:08:20,603 basehttp "GET /static/js/d3.v3.js HTTP/1.1" 200 144718
+INFO 2025-06-15 00:08:20,605 basehttp "GET /static/js/rickshaw.min.js HTTP/1.1" 200 74756
+INFO 2025-06-15 00:08:20,615 basehttp "GET /static/js/neon-chat.js HTTP/1.1" 200 18696
+INFO 2025-06-15 00:08:20,647 basehttp "GET /static/js/echarts.js HTTP/1.1" 200 3058460
+INFO 2025-06-15 00:08:22,644 basehttp "GET /static/font/entypo.woff HTTP/1.1" 200 40320
+INFO 2025-06-15 00:08:27,785 basehttp "GET /boss/selfInfo HTTP/1.1" 301 0
+INFO 2025-06-15 00:08:27,840 basehttp "GET /boss/selfInfo/ HTTP/1.1" 200 13215
+INFO 2025-06-15 00:08:27,971 basehttp "GET /static/js/fileinput.js HTTP/1.1" 200 6328
+INFO 2025-06-15 00:08:34,811 basehttp "GET /boss/tableData HTTP/1.1" 301 0
+INFO 2025-06-15 00:08:34,895 basehttp "GET /boss/tableData/ HTTP/1.1" 200 68706
+INFO 2025-06-15 00:08:39,231 basehttp "GET /static/font/o-0IIpQlx3QUlC5A4PNr5TRA.woff2 HTTP/1.1" 200 16056
+INFO 2025-06-15 00:08:45,389 basehttp "GET /boss/companyTags HTTP/1.1" 301 0
+INFO 2025-06-15 00:08:49,435 basehttp "GET /boss/companyTags/ HTTP/1.1" 200 8792
+WARNING 2025-06-15 00:08:49,507 basehttp "GET /static/companyTags_cloud.jpg HTTP/1.1" 404 1877
+WARNING 2025-06-15 00:08:49,522 basehttp "GET /static/companyTags_cloud1.jpg HTTP/1.1" 404 1880
