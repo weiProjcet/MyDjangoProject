@@ -1,4 +1,3 @@
-from django.conf.urls.static import static
 from django.urls import path, re_path
 
 from myProjects import settings

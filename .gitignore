@@ -1,5 +1,7 @@
 # 忽略 avatar 文件夹中的所有文件
 media/avatar/*
+# 防止日志文件被提交
+/logs/django.log
 
 # 但不忽略 default.png 文件
 !media/avatar/default.png
