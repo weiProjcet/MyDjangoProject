@@ -1,0 +1,55 @@
+INFO 2025-06-14 11:35:47,352 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-14 11:35:49,808 log Not Found: /
+WARNING 2025-06-14 11:35:49,808 basehttp "GET / HTTP/1.1" 404 2478
+WARNING 2025-06-14 11:35:52,042 log Not Found: /favicon.ico
+WARNING 2025-06-14 11:35:52,042 basehttp "GET /favicon.ico HTTP/1.1" 404 2529
+INFO 2025-06-14 11:36:09,633 basehttp "GET /boss/login HTTP/1.1" 301 0
+INFO 2025-06-14 11:36:09,653 basehttp "GET /boss/login/ HTTP/1.1" 200 4170
+INFO 2025-06-14 11:36:09,866 basehttp "GET /static/css/neon-forms.css HTTP/1.1" 200 180659
+INFO 2025-06-14 11:36:09,867 basehttp "GET /static/css/neon-theme.css HTTP/1.1" 200 178407
+INFO 2025-06-14 11:36:09,878 basehttp "GET /static/css/custom.css HTTP/1.1" 200 54
+INFO 2025-06-14 11:36:09,882 basehttp "GET /static/js/main-gsap.js HTTP/1.1" 200 99007
+INFO 2025-06-14 11:36:09,884 basehttp "GET /static/js/jquery-ui-1.10.3.minimal.min.js HTTP/1.1" 200 99100
+INFO 2025-06-14 11:36:09,888 basehttp "GET /static/js/jquery-1.11.0.min.js HTTP/1.1" 200 96381
+INFO 2025-06-14 11:36:09,891 basehttp "GET /static/js/resizeable.js HTTP/1.1" 200 2406
+INFO 2025-06-14 11:36:09,892 basehttp "GET /static/js/bootstrap.js HTTP/1.1" 200 58326
+INFO 2025-06-14 11:36:09,895 basehttp "GET /static/css/bootstrap.css HTTP/1.1" 200 218530
+INFO 2025-06-14 11:36:09,895 basehttp "GET /static/css/neon-core.css HTTP/1.1" 200 228937
+INFO 2025-06-14 11:36:09,898 basehttp "GET /static/js/neon-api.js HTTP/1.1" 200 13926
+INFO 2025-06-14 11:36:09,902 basehttp "GET /static/js/jquery.validate.min.js HTTP/1.1" 200 21068
+INFO 2025-06-14 11:36:09,902 basehttp "GET /static/js/neon-login.js HTTP/1.1" 200 6541
+INFO 2025-06-14 11:36:09,903 basehttp "GET /static/js/neon-demo.js HTTP/1.1" 200 1964
+INFO 2025-06-14 11:36:09,904 basehttp "GET /static/js/joinable.js HTTP/1.1" 200 119975
+INFO 2025-06-14 11:36:09,908 basehttp "GET /static/js/neon-custom.js HTTP/1.1" 200 48302
+INFO 2025-06-14 11:36:16,030 views 用户尝试登录
+WARNING 2025-06-14 11:36:16,051 views 用户名或密码错误：为23
+INFO 2025-06-14 11:36:16,051 basehttp "POST /boss/login/ HTTP/1.1" 200 4253
+INFO 2025-06-14 11:36:27,745 views 用户尝试登录
+WARNING 2025-06-14 11:36:27,752 views 用户名或密码错误：wei
+INFO 2025-06-14 11:36:27,755 basehttp "POST /boss/login/ HTTP/1.1" 200 4251
+INFO 2025-06-14 11:36:31,672 views 用户尝试登录
+INFO 2025-06-14 11:36:31,685 views 用户wei登录成功
+INFO 2025-06-14 11:36:31,699 basehttp "POST /boss/login/ HTTP/1.1" 302 0
+INFO 2025-06-14 11:36:31,815 basehttp "GET /boss/index/ HTTP/1.1" 200 45423
+INFO 2025-06-14 11:36:31,852 basehttp "GET /static/css/jquery-ui-1.10.3.custom.min.css HTTP/1.1" 200 12225
+INFO 2025-06-14 11:36:31,853 basehttp "GET /static/css/entypo.css HTTP/1.1" 200 18071
+INFO 2025-06-14 11:36:31,853 basehttp "GET /static/css/css.css HTTP/1.1" 200 6386
+INFO 2025-06-14 11:36:31,875 basehttp "GET /media/avatar/1728188359295_nXnsrAd.jpg HTTP/1.1" 200 1532730
+INFO 2025-06-14 11:36:32,074 basehttp "GET /static/css/jquery-jvectormap-1.2.2.css HTTP/1.1" 200 936
+INFO 2025-06-14 11:36:32,082 basehttp "GET /static/css/rickshaw.min.css HTTP/1.1" 200 6044
+INFO 2025-06-14 11:36:32,096 basehttp "GET /static/css/datatables.responsive.css HTTP/1.1" 200 622
+INFO 2025-06-14 11:36:32,150 basehttp "GET /static/js/jquery-jvectormap-1.2.2.min.js HTTP/1.1" 200 33323
+INFO 2025-06-14 11:36:32,171 basehttp "GET /static/js/jquery-jvectormap-europe-merc-en.js HTTP/1.1" 200 148738
+INFO 2025-06-14 11:36:32,182 basehttp "GET /static/js/jquery-jvectormap-world-mill-en.js HTTP/1.1" 200 144318
+INFO 2025-06-14 11:36:32,196 basehttp "GET /static/js/jquery.sparkline.min.js HTTP/1.1" 200 123532
+INFO 2025-06-14 11:36:32,209 basehttp "GET /static/js/d3.v3.js HTTP/1.1" 200 144718
+INFO 2025-06-14 11:36:32,216 basehttp "GET /static/js/rickshaw.min.js HTTP/1.1" 200 74756
+INFO 2025-06-14 11:36:32,244 basehttp "GET /static/js/neon-chat.js HTTP/1.1" 200 18696
+INFO 2025-06-14 11:36:32,305 basehttp "GET /static/js/echarts.js HTTP/1.1" 200 3058460
+INFO 2025-06-14 11:36:34,077 basehttp "GET /static/font/entypo.woff HTTP/1.1" 200 40320
+INFO 2025-06-14 11:36:39,082 basehttp "GET /boss/download_jobs/ HTTP/1.1" 200 320396
+INFO 2025-06-14 11:37:40,068 basehttp "GET /boss/download_jobs/ HTTP/1.1" 200 320396
+INFO 2025-06-14 11:37:54,228 basehttp "GET /boss/logOut HTTP/1.1" 301 0
+INFO 2025-06-14 11:37:54,241 views 用户wei登出
+INFO 2025-06-14 11:37:54,246 basehttp "GET /boss/logOut/ HTTP/1.1" 302 0
+INFO 2025-06-14 11:37:54,255 basehttp "GET /boss/login/ HTTP/1.1" 200 4170

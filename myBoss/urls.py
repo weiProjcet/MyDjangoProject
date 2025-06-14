@@ -10,6 +10,7 @@ urlpatterns = [
 
     path('index/', views.index, name='index'),
     path('logOut/', views.logOut, name='logOut'),
+    path('download_jobs/', views.download_jobs, name='download_jobs'),
     path('selfInfo/', views.selfInfo, name='selfInfo'),
 
     path('tableData/', views.tableData, name='tableData'),

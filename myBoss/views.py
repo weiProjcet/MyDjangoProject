@@ -1,12 +1,14 @@
+import csv
 import hashlib
 
 from django.core.cache import cache
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger, Page
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.views import View
 
-from myBoss.models import User
-from myBoss.utils import getSelfInfo, getTableData, getHistoryData
+from .models import User, JobInfo
+from .utils import getSelfInfo, getTableData, getHistoryData
 import myBoss.utils.getHomeData as getHomeData
 from myBoss.utils.forms import LoginForm, RegistryForm, selfInfoForm
 import logging
@@ -104,6 +106,27 @@ def index(request):
         'addressTop': addressTop,
         'tableData': current_page
     })
+
+
+def download_jobs(request):
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = 'attachment;filename="jobs.csv"'
+    writer = csv.writer(response)
+    # 表头
+    writer.writerow([
+        'id', 'title', 'address', 'educational', 'workExperience',
+        'workTag', 'salary', 'salaryMonth', 'companyTags',
+        'pratice', 'companyTitle', 'companyNature',
+        'companyStatus', 'companyPeople', 'createTime', 'dist'
+    ])
+    for job in JobInfo.objects.all():
+        writer.writerow([
+            job.id, job.title, job.address, job.educational, job.workExperience,
+            job.workTag, job.salary, job.salaryMonth, job.companyTags,
+            job.pratice, job.companyTitle, job.companyNature,
+            job.companyStatus, job.companyPeople, job.createTime, job.dist
+        ])
+    return response
 
 
 def selfInfo(request):
