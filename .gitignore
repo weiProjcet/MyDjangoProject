@@ -7,3 +7,14 @@ media/**/*
 !media/avatar/default.png
 
 
+# 忽略 Python 虚拟环境
+venv/
+
+# 忽略 PyCharm/IntelliJ IDEA 配置文件夹
+.idea/
+
+# 忽略 Python 缓存文件夹
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
