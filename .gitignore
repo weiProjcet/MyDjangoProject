@@ -18,3 +18,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# 忽略特定的迁移文件
+myBoss/migrations/000*.py
+myBoss/migrations/__pycache__/
