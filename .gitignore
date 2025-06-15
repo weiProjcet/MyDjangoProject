@@ -13,11 +13,13 @@ __pycache__/
 # 忽略特定的迁移文件
 myBoss/migrations/000*.py
 myBoss/migrations/__pycache__/
-#
-## 忽略 avatar 文件夹中的所有文件
-#media/**/*
-## 但不忽略 default.png 文件
-#!media/avatar/default.png
+
+# 忽略 avatar 文件夹中的所有文件
+media/avatar/*
+media/*.jpg
+# 但不忽略 default.png 文件
+!media/avatar/default.png
+
 
 # 防止日志文件被提交
 /logs/django.log
