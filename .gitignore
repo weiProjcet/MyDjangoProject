@@ -11,7 +11,7 @@ __pycache__/
 *.pyd
 
 # 忽略特定的迁移文件
-myBoss/migrations/000*.py
+#myBoss/migrations/000*.py
 myBoss/migrations/__pycache__/
 
 # 忽略 avatar 文件夹中的所有文件
